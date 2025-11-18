@@ -1,31 +1,29 @@
 # 你画我猜 - AI 绘画猜测游戏
 
-一个在线的"你画我猜"游戏，玩家可以在画布上作画，AI 系统会猜测画的是什么内容。
+一个在线的你画我猜游戏，玩家可以在画布上作画，AI 系统会猜测画的是什么内容。
 
 ## 技术栈
 
-- **前端框架**: Next.js 15 (App Router)
+- **前端框架**: Next.js 15
 - **样式**: Tailwind CSS
-- **AI 服务**: Google Gemini API (直接调用，无 SDK)
+- **AI 服务**: Google Gemini API 
 - **语言**: TypeScript
 
 ## 功能特性
 
-- ✏️ 交互式画布，支持自由绘画
-- 🎨 可调节画笔大小和颜色
-- 🤖 AI 视觉识别，猜测画作内容
-- 🔄 实时反馈和加载状态
-- 📱 响应式设计
+-  交互式画布，支持自由绘画
+-  可调节画笔大小和颜色
+-  AI 视觉识别，猜测画作内容
+-  实时反馈和加载状态
+-  响应式设计
 
 ## 快速开始
 
 ### 1. 获取 Gemini API 密钥
 
-访问 [Google AI Studio](https://makersuite.google.com/app/apikey) 获取你的 Gemini API 密钥。
-
 ### 2. 配置环境变量
 
-创建 `.env.local` 文件并添加你的 API 密钥：
+创建 `.env.local` 
 
 \`\`\`bash
 cp .env.local.example .env.local
@@ -126,6 +124,4 @@ draw-and-guess/
 2. 确保 API 密钥在 Google Cloud Console 中已启用 Generative Language API
 3. 查看详细的故障排除步骤：[VERCEL_DEPLOY.md](./VERCEL_DEPLOY.md)
 
-## 许可证
 
-MIT
