@@ -102,6 +102,30 @@ draw-and-guess/
 - 直接调用 Gemini API 的 REST 接口，无需 SDK
 - Next.js API Routes 作为后端代理，保护 API 密钥
 
+## 部署到 Vercel
+
+### 一键部署
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/你的用户名/draw-and-guess)
+
+### 手动部署
+
+1. 将代码推送到 GitHub
+2. 在 [Vercel](https://vercel.com) 上导入项目
+3. 在 Vercel 项目设置中添加环境变量：
+   - `GEMINI_API_KEY`: 你的 Gemini API 密钥
+4. 部署！
+
+⚠️ **重要提示**：如果部署后遇到 API 调用失败的问题，请查看 [VERCEL_DEPLOY.md](./VERCEL_DEPLOY.md) 获取详细的故障排除指南。
+
+## 故障排除
+
+如果在 Vercel 上部署后遇到 "Gemini API 调用失败" 的错误：
+
+1. 检查你在 Vercel 中配置的 `GEMINI_API_KEY` 环境变量是否正确
+2. 确保 API 密钥在 Google Cloud Console 中已启用 Generative Language API
+3. 查看详细的故障排除步骤：[VERCEL_DEPLOY.md](./VERCEL_DEPLOY.md)
+
 ## 许可证
 
 MIT
